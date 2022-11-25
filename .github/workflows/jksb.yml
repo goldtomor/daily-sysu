@@ -4,7 +4,7 @@ on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     # 每天早上7：32开始进行申报
-    - cron:  '59 23 * * *'
+    - cron:  '26 23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
     - name: Wait
       uses: 1itachi/sleep-random@v1.0.0
       with:
-        minutes: '1'
+        minutes: '10'
         random: 'true'
         
     - name: Install firefox and packages
