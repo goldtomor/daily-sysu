@@ -18,7 +18,7 @@ jobs:
     - name: Wait
       uses: 1itachi/sleep-random@v1.0.0
       with:
-        minutes: '20'
+        minutes: '1'
         random: 'true'
         
     - name: Install firefox and packages
